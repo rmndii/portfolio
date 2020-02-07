@@ -1,194 +1,145 @@
 @charset "UTF-8";
-
-/* 基礎 */
-html{
-	box-sizing: border-box;
-}
-body{
-	background: #212533;
-	-webkit-text-size-adjust:100%;
-}
-img{
-	max-width: 100%;height: auto;
-}
-::selection{
-	background: #B55219;color:#fff;
-}
-::-moz-selection{
-	background: #B55219;color:#fff;
-}
-a{
-	color: #B55219;
-}
-a:hover{
-	color: #999;
-}
-#wrapper{
-	margin: 0 auto;padding: 0;
-	width: 100%;height: auto;background: #f9f9f9;
-	overflow: hidden;
+html {
+  box-sizing: border-box;
 }
 
-#gheader{
-	margin: 5% auto;width: 40%;padding: 2% 0;color: #212533;
-	border-bottom: 4px solid #212533;background: #f9f9f9;
-}
-#gheader h1{
-	font-size: 22px;font-weight: bold;
-	text-align: center;
-}
-#gheader p{
-	font-size: 20px;text-align: center;
+body {
+  -webkit-text-size-adjust: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #f9f9f9;
+  color: #212533;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
 }
 
-#gmain{
-	margin: 0 auto;padding: 0;
-	height: auto;float: left;
-}
-#container{
-	margin: 3% auto;padding: 0;
-	height: auto;float: left;
-}
-#container ul{
-	margin: 0 auto;padding: 0;width: 70%;height: auto;text-align: center;
-}
-#container ul li{
-	float: left;overflow: hidden;
-	border: #ddd 1px solid;margin: 3% auto;
-	width: 100%;line-height: 0;
-}
-#container ul li a{
-	display: block;
-}
-	
-figure{
-	position: relative;overflow: hidden;height:100%;
-}
-figure img{
-	width:100%;height:auto;
-}
-figcaption{
-	position: absolute;padding:3% 0 0 3%;
-	left: 0;z-index: 2;
-	width: 100%;height: 100%;bottom: 0;height: 30%;
-	background: rgba(165,69,13,.9);
-	-webkit-transition: .3s;transition: .3s;
-}
-figcaption h3{
-	margin: 0 auto;font-size: 13px;color: #fff;text-align: left;
-	letter-spacing: 0.1em;line-height: 1.2;margin-bottom: 5px; 
-}
-figcaption p{
-	font-size: 10px;color: #fff;text-align: left;
-	letter-spacing: 0.1em;line-height: 1.2;
-}
-figure:hover figcaption{
-	bottom: -40%;
-}
-	
-#about{
-	margin: 0 auto;width: 80%;padding: 10% 0;
-}
-#about h2{
-	font-size: 20px;color: #c9c9c9;font-weight: bold;
-	line-height: 2;
-}
-#about h3{
-	font-size: 13px;line-height: 1.5;
-}
-#about p{
-	font-size: 12px;line-height: 1.3;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-#gfooter small{
-	float: right;display: block;
-	color: #f9f9f9;background: #212533;
-	width: 100%;margin: 0;padding: 0 2% 0 0;
-	font-size: 10px;letter-spacing: 0.1em;
-	line-height: 3;text-align: right;
+::selection {
+  background: #B55219;
+  color: #fff;
 }
 
-
-
-/* タブ */
-@media screen and (min-width:481px){
-	#wrapper{
-	margin: 3% auto;padding: 1%;
-	width: 90%;height: auto;
-	overflow: hidden;border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	}
-	#gheader{
-	width: 30%;padding: 1% 0;
-	}
-	#gheader h1{
-	font-size: 30px;
-	}
-	#gheader p{
-	font-size: 24px;
-	}
-	#container ul{
-	width: 90%;
-	}
-	#container ul li{
-	float:left;margin: 1%;
-	}
-	#about{
-	width: 75%;padding: 0;
-	}
-	#gfooter small{
-	color: #000;background: #f9f9f9;width: 25%;
-	}
+::-moz-selection {
+  background: #B55219;
+  color: #fff;
 }
 
+a {
+  color: #B55219;
+}
 
+a:hover {
+  color: #999;
+}
 
-/* PC */
-@media screen and (min-width:769px){
-	#wrapper{
-	width: 80%;
-	}
-	#gheader{
-	margin: 5% auto;width: 20%;
-	}
-	#gheader h1{
-	font-size: 32px;
-	}
-	#gheader p{
-	font-size: 26px;
-	}
-	#container{
-	margin-bottom: 5%;
-	}
-	#container ul{
-	width: 75%;
-	}
-	#container ul li{
-	width: 240px;height: 240px;
-	}
-	figure{
-	width: 240px;
-	}
-	figcaption{
-	position: absolute;padding:3% 0 0 3%;
-	left: 0;z-index: 2;bottom: -40%;height: 30%;
-	background: rgba(165,69,13,.9);
-	-webkit-transition: .3s;transition: .3s;
-	}
-	figure:hover figcaption{
-	bottom: 0;
-	}
-	#about{
-	margin: 0 auto;width: 72%;
-	}
-	#about h2{
-	font-size: 24px;
-	}
-	#about h3{
-	font-size: 15px;line-height: 1.5;
-	}
-	#about p{
-	font-size: 14px;line-height: 1.3;
-	}
+header {
+  width: 100%;
+  background: #212533;
+  box-sizing: border-box;
+  padding: 5% 0;
+  text-align: center;
+}
+
+header h1 {
+  color: #f9f9f9;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #212533;
+}
+
+.portfolio {
+  margin: 3% auto;
+  padding: 0;
+}
+
+.portfolio article {
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  text-align: center;
+  display: flex;
+}
+
+.portfolio article figure {
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
+  overflow: hidden;
+  border: #ddd 1px solid;
+  margin: 1%;
+}
+
+.portfolio article figure a {
+  display: block;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  padding: 2%;
+  box-sizing: border-box;
+  left: 0;
+  bottom: -100%;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(165, 69, 13, 0.9);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+figcaption h3 {
+  margin: 0 auto;
+  font-size: 13px;
+  color: #fff;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+figcaption p {
+  font-size: 10px;
+  color: #fff;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+figure:hover figcaption {
+  bottom: -40%;
+}
+
+footer p {
+  text-align: right;
+  display: block;
+  color: #f9f9f9;
+  background: #212533;
+  width: 100%;
+  margin: 0;
+  padding: 2%;
+  box-sizing: border-box;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-align: right;
 }
