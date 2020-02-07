@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans&display=swap');
 html{
 box-sizing: border-box;
 }
@@ -31,37 +31,60 @@ width: 100%;
 background: #212533;
 box-sizing: border-box;
 padding: 5% 0;
+margin:0 auto 3%;
 text-align:center;
 h1{
 color:#f9f9f9;
-font-size: 40px;
+font-size: 50px;
 letter-spacing: 0.1em;
+font-family: 'Julius Sans One', sans-serif;
 }
 }
 h2{
-font-size: 22px;font-weight: bold;
+font-size: 40px;
+font-weight: bold;
 text-align: center;
 color:#212533;
+padding: 2%;
+letter-spacing: 0.1em;
+margin:0 auto 1%;
+box-sizing: border-box;
+}
+.marker-animation{
+	font-family: 'Julius Sans One', sans-serif;
+		background-image: -webkit-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+		background-image: -moz-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+		background-image: -ms-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+		background-image: -o-linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+		background-image: linear-gradient(left, transparent 50%, rgb(255,250,153) 50%);
+		background-repeat: repeat-x;
+		background-size: 200% .8em;
+		background-position: 0 .5em;
+		transition: all 2s ease;
+		&.active{
+			background-position: -100% .5em;
+		}
 }
 .portfolio{
-margin: 3% auto;padding: 0;
+margin: 3% auto;
+box-sizing: border-box;
 }
 .works{
-	margin: 0 auto;padding: 0;
+	margin: 0 auto;
+	padding: 0;
 	height: auto;
 	text-align: center;
 	display: flex;
-article figure{
-	justify-content: start;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 	align-content:stretch;
+article figure{
 	overflow: hidden;
 	border: #ddd 1px solid;
-	margin: 1%;
+	margin: 4%;
 	position: relative;
 overflow: hidden;
-height:100%;
 a{
 	display: block;
 	}
@@ -80,15 +103,17 @@ img{
 		-webkit-transition: .3s;transition: .3s;
 		}
 		figcaption h3{
-		margin: 0 auto;font-size: 13px;color: #fff;text-align: left;
+		margin: 0 auto;font-size: 14px;color: #fff;
+		text-align: left;
 		letter-spacing: 0.1em;line-height: 1.4;
+		font-weight: bold;
 		}
 		figcaption p{
-		font-size: 10px;color: #fff;text-align: left;
+		font-size: 12px;color: #fff;text-align: left;
 		letter-spacing: 0.1em;line-height: 1.4;
 		}
 		figure:hover figcaption{
-		bottom: -40%;
+		bottom: -60%;
 		}
 }
 
