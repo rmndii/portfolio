@@ -49,6 +49,7 @@ padding: 2%;
 letter-spacing: 0.1em;
 margin:0 auto 1%;
 box-sizing: border-box;
+position: relative;
 }
 .marker-animation{
 	font-family: 'Julius Sans One', sans-serif;
@@ -70,6 +71,7 @@ margin: 3% auto;
 box-sizing: border-box;
 }
 .works{
+	width:80%;
 	margin: 0 auto;
 	padding: 0;
 	height: auto;
@@ -84,7 +86,7 @@ article figure{
 	border: #ddd 1px solid;
 	margin: 4%;
 	position: relative;
-overflow: hidden;
+	overflow: hidden;
 a{
 	display: block;
 	}

@@ -61,6 +61,7 @@ h2 {
   letter-spacing: 0.1em;
   margin: 0 auto 1%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .marker-animation {
@@ -86,6 +87,7 @@ h2 {
 }
 
 .works {
+  width: 80%;
   margin: 0 auto;
   padding: 0;
   height: auto;
