@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #f9f9f9;
+  color: #212533;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: #B55219;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #B55219;
+  color: #fff;
+}
+
+a {
+  color: #B55219;
+}
+
+a:hover {
+  color: #999;
+}
+
+header {
+  width: 100%;
+  background: #212533;
+  box-sizing: border-box;
+  padding: 5% 0;
+  margin: 0 auto 3%;
+  text-align: center;
+}
+
+header h1 {
+  color: #f9f9f9;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #212533;
+  padding: 2%;
+  letter-spacing: 0.1em;
+  margin: 0 auto 1%;
+  box-sizing: border-box;
+}
+
+.marker-animation {
+  font-family: 'Julius Sans One', sans-serif;
+  background-image: -webkit-linear-gradient(left, transparent 50%, #fffa99 50%);
+  background-image: -moz-linear-gradient(left, transparent 50%, #fffa99 50%);
+  background-image: -ms-linear-gradient(left, transparent 50%, #fffa99 50%);
+  background-image: -o-linear-gradient(left, transparent 50%, #fffa99 50%);
+  background-image: linear-gradient(left, transparent 50%, #fffa99 50%);
+  background-repeat: repeat-x;
+  background-size: 200% .8em;
+  background-position: 0 .5em;
+  transition: all 2s ease;
+}
+
+.marker-animation.active {
+  background-position: -100% .5em;
+}
+
+.portfolio {
+  margin: 3% auto;
+  box-sizing: border-box;
+}
+
+.works {
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.works article figure {
+  overflow: hidden;
+  border: #ddd 1px solid;
+  margin: 4%;
+  position: relative;
+  overflow: hidden;
+}
+
+.works article figure a {
+  display: block;
+}
+
+.works article figure img {
+  width: 100%;
+  height: auto;
+}
+
+.works figcaption {
+  position: absolute;
+  padding: 2%;
+  box-sizing: border-box;
+  left: 0;
+  bottom: -100%;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(165, 69, 13, 0.9);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.works figcaption h3 {
+  margin: 0 auto;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.works figcaption p {
+  font-size: 12px;
+  color: #fff;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+.works figure:hover figcaption {
+  bottom: -60%;
+}
+
+footer p {
+  text-align: right;
+  display: block;
+  color: #f9f9f9;
+  background: #212533;
+  width: 100%;
+  margin: 0;
+  padding: 1%;
+  box-sizing: border-box;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-align: right;
+}
