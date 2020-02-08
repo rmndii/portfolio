@@ -57,14 +57,25 @@ h2 {
   font-weight: bold;
   text-align: center;
   color: #212533;
-  padding: 1.5% 3%;
+  padding: 0 0 2% 0;
   letter-spacing: 0.1em;
-  margin: 0 auto 3%;
+  margin: 2% auto 3%;
   display: table;
-  border-bottom: 2px solid #212533;
   box-sizing: border-box;
   position: relative;
   font-family: "Julius Sans One", sans-serif;
+}
+
+h2:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #212533;
+  width: 100px;
+  height: 2px;
 }
 
 h3 {
@@ -129,7 +140,7 @@ h3 {
 
 .works figcaption {
   position: absolute;
-  padding: 2%;
+  padding: 3%;
   box-sizing: border-box;
   left: 0;
   bottom: -100%;
