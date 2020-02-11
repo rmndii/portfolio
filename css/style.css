@@ -336,41 +336,54 @@ footer p {
   .works figure:hover figcaption {
     bottom: -60%;
   }
-}
-
-/* アニメーション */
-.burger-nav {
-  animation-name: anime-burger;
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
-}
-
-@keyframes anime-burger {
-  0% {
-    transform: translateX(300px);
+  /* アニメーション */
+  .burger-nav {
+    animation-name: anime-burger;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
   }
-  100% {
-    transform: translateX(0);
+  @keyframes anime-burger {
+    0% {
+      transform: translateX(300px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  /* メディアクエリ */
+  /* burger */
+  header {
+    padding: 1em;
+  }
+  header.fixed {
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .hero {
+    padding: 8em 0 3em;
+  }
+  header nav ul {
+    display: block;
+  }
+  header nav ul li {
+    margin-right: 0;
+    letter-spacing: 0.1em;
+    display: block;
+    width: 100%;
   }
 }
 
-/* メディアクエリ */
-/* burger */
-.burger-nav {
-  display: none;
-}
-
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) and (max-width: 768px) {
   .burger-nav {
     position: fixed;
     top: 0;
-    left: 0;
-    display: none;
+    right: 0;
     z-index: 10;
     background: #fff;
-    width: 100%;
+    width: 60%;
     height: 100%;
     text-align: center;
+    display: none !important;
   }
   .burger-nav.open {
     display: block !important;
@@ -380,16 +393,16 @@ footer p {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) and (max-width: 768px) {
   .burger-icon {
     display: block;
     width: 25px;
     height: 18px;
     cursor: pointer;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 20;
+    top: 1.5em;
+    right: 1em;
+    z-index: 99;
   }
   .burger-icon span {
     position: absolute;
