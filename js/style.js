@@ -6,6 +6,7 @@ $(function ()
         mobile: true, top: 50
     });
 });
+
 $(function ()
 {
     $('a[href^="#"]').click(function ()
