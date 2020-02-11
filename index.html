@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>natani portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -22,20 +22,22 @@
 <body>
 
     <header class="site-header">
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         <div class="inner flexbox">
         <h1 class="site-logo">PORTFOLIO</h1>
-        <nav class="gnav NavMenu flexbox">
+        <nav class="gnav flexbox">
             <ul class="gnav__menu">
                 <li class="gnav__menu__item"><a href="#">home</a></li>
                 <li class="gnav__menu__item"><a href="#skill">skill</a></li>
                 <li class="gnav__menu__item"><a href="#school">school</a></li>
             </ul>
         </nav>
-        <div class="Toggle">
-            　　<span></span>
-            　　<span></span>
-            　　<span></span>
-        </div>
         </div>
     </header>
 
@@ -137,13 +139,14 @@
         </section>
 
     </main>
-
     <footer>
         <p>&copy; 2015-2020 natani.</p>
     </footer>
-    <script src="js/style.js"></script>
+<div id="overlay"></div>
+
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.fs.boxer.js"></script>
+    <script src="js/style.js"></script>
 </body>
 
 </html>

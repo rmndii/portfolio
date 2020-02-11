@@ -18,6 +18,10 @@ img {
   height: auto;
 }
 
+.Toggle {
+  display: none;
+}
+
 ::selection {
   background: #1f428b;
   color: #fff;
@@ -283,7 +287,7 @@ footer p {
   display: block !important;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .sp {
     display: none !important;
   }
@@ -306,128 +310,68 @@ footer p {
   .works figure:hover figcaption {
     bottom: -60%;
   }
-  /*ナビメニューのスタイルを指定*/
-  nav.NavMenu {
-    　position: fixed;
-    /*表示位置を固定*/
-    　z-index: 2;
-    /*重ね順を変更*/
-    　top: 0;
-    /*表示位置を指定*/
-    　left: 0;
-    /*表示位置を指定*/
-    　background: #fff;
-    /*背景を白にする*/
-    　color: #000;
-    /*文字色を黒にする*/
-    　text-align: center;
-    /*テキストを中央揃え*/
-    　width: 100%;
-    /*全幅表示*/
-    　transform: translateY(-100%);
-    /*ナビを上に隠す*/
-    　transition: all 0.6s;
-    /*アニメーションの時間を指定*/
-  }
-  nav.NavMenu ul {
-    　background: #ccc;
-    /*背景をグレーにする*/
-    　width: 100%;
-    　margin: 0 auto;
-    　padding: 0;
-  }
-  nav.NavMenu ul li {
-    　font-size: 1.1em;
-    　list-style-type: none;
-    　padding: 0;
-    　width: 100%;
-    　border-bottom: 1px dotted #333;
-  }
-  nav.NavMenu ul li:last-child {
-    　padding-bottom: 0;
-    　border-bottom: none;
-    /*最後のメニュー項目のみ下線を消す*/
-  }
-  nav.NavMenu ul li a {
-    　display: block;
-    /*クリックできる領域を広げる*/
-    　color: #000;
-    　padding: 1em 0;
-  }
-  .Toggle {
-    display: block;
+  .gnav {
     position: fixed;
-    /* bodyに対しての絶対位置指定 */
-    right: 13px;
-    top: 12px;
-    width: 42px;
-    height: 42px;
-    cursor: pointer;
-    z-index: 3;
+    z-index: 100;
+    height: 100%;
+    background: #fff;
   }
-  .Toggle span {
+  .gnav > ul > li {
+    position: relative;
+  }
+  #nav-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    height: 32px;
+  }
+  #overlay {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  /* サブメニューは開けない */
+  #nav-toggle {
     display: block;
-    position: absolute;
-    width: 30px;
-    border-bottom: solid 3px #000;
-    -webkit-transition: .35s ease-in-out;
-    /*変化の速度を指定*/
-    -moz-transition: .35s ease-in-out;
-    /*変化の速度を指定*/
-    transition: .35s ease-in-out;
-    /*変化の速度を指定*/
-    left: 6px;
   }
-  .Toggle span:nth-child(1) {
-    top: 9px;
+  /* nav open */
+  .open {
+    overflow: hidden;
   }
-  .Toggle span:nth-child(2) {
-    top: 18px;
+  .open #overlay {
+    display: block;
   }
-  .Toggle span:nth-child(3) {
-    top: 27px;
+  .open #sidebar {
+    transform: translate3d(-300px, 0, 0);
   }
-  /* 最初のspanをマイナス45度に */
-  .Toggle.active span:nth-child(1) {
-    top: 18px;
-    left: 6px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  /* 2番目と3番目のspanを45度に */
-  .Toggle.active span:nth-child(2),
-  .Toggle.active span:nth-child(3) {
-    top: 18px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
+  /* #nav-toggle close */
+  .open #nav-toggle span:nth-child(1) {
+    top: 11px;
     transform: rotate(45deg);
   }
-  /*トグルボタンが押されたときに付与するクラス*/
-  nav.NavMenu.active {
-    　transform: translateY(0%);
+  .open #nav-toggle span:nth-child(2) {
+    width: 0;
+    left: 50%;
   }
-  /*ナビメニューのスタイルを指定*/
-  nav.NavMenu {
-    　position: fixed;
-    /*表示位置を固定*/
-    　z-index: 2;
-    /*重ね順を変更*/
-    　top: 0;
-    /*表示位置を指定*/
-    　left: 0;
-    /*表示位置を指定*/
-    　background: #fff;
-    /*背景を白にする*/
-    　color: #000;
-    /*文字色を黒にする*/
-    　text-align: center;
-    /*テキストを中央揃え*/
-    　width: 100%;
-    /*全幅表示*/
-    　transform: translateY(-100%);
-    /*ナビを上に隠す*/
-    　transition: all 0.6s;
-    /*アニメーションの時間を指定*/
+  .open #nav-toggle span:nth-child(3) {
+    top: 11px;
+    transform: rotate(-45deg);
+  }
+  /* z-index */
+  #overlay {
+    z-index: 200;
+  }
+  #sidebar {
+    z-index: 300;
+  }
+  #nav-toggle {
+    z-index: 400;
   }
 }
