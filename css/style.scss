@@ -212,14 +212,6 @@ header {
     justify-content: center;
     align-items: center;
 		align-content: stretch;
-		a{
-			color:#fff !important;
-			text-decoration: underline;
-			&:hover{
-			color:#fff !important;
-			text-decoration: none;
-			}
-		}
     article figure {
       overflow: hidden;
       border: #ddd 1px solid;
@@ -227,8 +219,14 @@ header {
       position: relative;
       overflow: hidden;
       a {
-        display: block;
-      }
+      display: block;
+			color:#fff !important;
+			text-decoration: underline;
+			&:hover{
+			color:#fff !important;
+			text-decoration: none;
+			}
+		}
       img {
         width: 100%;
         height: auto;
