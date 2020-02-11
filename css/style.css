@@ -188,6 +188,10 @@ footer p {
   line-height: 1.4;
 }
 
+.sp {
+  display: block;
+}
+
 @media screen and (max-width: 481px) {
   .works {
     width: 100%;
@@ -207,5 +211,8 @@ footer p {
   }
   .works figure:hover figcaption {
     bottom: -60%;
+  }
+  .works .sp {
+    display: none;
   }
 }

@@ -167,6 +167,9 @@ footer p {
   letter-spacing: 0.1em;
   line-height: 1.4;
 }
+.sp{
+    display:block;
+  }
 @media screen and (max-width: 481px) {
 .works {
   width: 100%;
@@ -185,6 +188,9 @@ footer p {
   }
   figure:hover figcaption {
     bottom: -60%;
+  }
+  .sp{
+    display:none;
   }
 }
 }
