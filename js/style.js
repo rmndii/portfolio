@@ -1,14 +1,15 @@
-$(function ()
-{
+$(function (){
     $("body").css({ "opacity": "0" });
     $("body").animate({ "opacity": "1" }, 1300);
     $(".boxer").boxer({
         mobile: true, top: 50
     });
-});
 
-$(function ()
-{
+    $('#nav-toggle').on('click', function ()
+    {
+        $('body').toggleClass('open');
+    });
+
     $('a[href^="#"]').click(function ()
     {
         var speed = 500;
@@ -18,10 +19,7 @@ $(function ()
         $("html, body").animate({ scrollTop: position }, speed, "swing");
         return false;
     });
-});
 
-$(function ()
-{
     var $win = $(window),
         $main = $('main'),
         $nav = $('nav'),
@@ -41,14 +39,5 @@ $(function ()
             $nav.removeClass(fixedClass);
             $main.css('margin-top', '0');
         }
-    });
-});
-
-
-$(function ()
-{
-    $('#nav-toggle').on('click', function ()
-    {
-        $('body').toggleClass('open');
     });
 });
