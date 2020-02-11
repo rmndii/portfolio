@@ -68,5 +68,14 @@ $(function (){
         });
     });
 
-    
+    // モーダルが開いたら、bodyにfixedを付与
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${window.scrollY}px`;
+
+    // モーダルが閉じられたら、スクロールのトップを取得してbodyに
+    const top = document.body.style.top;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
 });
