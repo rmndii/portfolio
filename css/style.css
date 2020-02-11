@@ -13,12 +13,12 @@ body {
   font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
 }
 
-#boxer .boxer-caption p a {
+.boxer-caption a {
   color: #fff !important;
   text-decoration: underline;
 }
 
-#boxer .boxer-caption p a:hover {
+.boxer-caption a:hover {
   color: #fff !important;
   text-decoration: none;
 }
