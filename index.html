@@ -9,127 +9,126 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/jquery.fs.boxer.css">
+    <script src="js/style.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/jquery.fs.boxer.js"></script>
     <!--
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/respond.js"></script>
--->
-    <script type="text/javascript">
-        $(function ()
-        {
-            $("body").css({ "opacity": "0" });
-            $("body").animate({ "opacity": "1" }, 1300);
-            $(".boxer").boxer({
-                mobile: true, top: 50
-            });ß
-        });
-    </script>
+<script src="js/respond.js"></script> -->
 
 </head>
 
 <body>
 
-    <header>
-        <h1>natani portfolio</h1>
+    <header class="site-header">
+        <div class="inner flexbox">
+        <h1 class="site-logo">PORTFOLIO</h1>
+        <nav class="gnav flexbox">
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item"><a href="#">home</a></li>
+                <li class="gnav__menu__item"><a href="#skill">skill</a></li>
+                <li class="gnav__menu__item"><a href="#school">school</a></li>
+            </ul>
+        </nav>
+        </div>
     </header>
 
     <main>
+        <div class="hero">
+            <h2>natani</h2>
+            <p>前職のWEB制作会社ではWordPressや独自CMS、<br class="sp">フルコーディングでのサイト制作を担当いたしました。</p>
+            <p>受託案件のため実績として掲載しておりませんが、歯科や内科などの医療系をメインに<br class="sp">美容院などのサービス業、学校関係など幅広いジャンルのサイト制作をおこなってまいりました。</p>
+        </div>
 
         <section class="portfolio">
-            <h2>works</h2>
-            <p>前職のWEB制作会社ではWordPressや独自CMS、<br class="sp">
-            フルコーディングでのサイト制作を担当いたしました。</p>
-            <p>受託案件のため実績として掲載しておりませんが、歯科や内科などの医療系をメインに<br class="sp">
-            美容院などのサービス業、学校関係など幅広いジャンルのサイト制作をおこなってまいりました。</p>
-            <div class="box">
+            <div class="box" id="skill">
                 <h3>SKILL</h3>
                 <p>HTML5 / CSS3 / Javascript / WordPress / カラーミー<br>
-                Photoshop / Illustrator / Dreamweaver / Adobe XD<br>
-                Excel / Word / PowerPoint</p>
+                    Photoshop / Illustrator / Dreamweaver / Adobe XD<br>
+                    Excel / Word / PowerPoint</p>
             </div>
-            <div class="box">
-                <h3>school</h3>
-            <div class="works">
-                <article>
-                    <figure>
-                    <a href="img/kadai1.jpg"
-                        caption="友人からサイトデザインを一新したいらしいと紹介されたのをきっかけに試験的に制作いたしました。【<a target=&quot;_blank&quot; href=&quot;http://tokyo-d-plex.com/~sawasuzuki/webchukan/&quot;>ACCESS</a>】"
-                        class="boxer" data-gallery="gallery">
-                            <img src="img/icon/kadai1.png" />
-                            <figcaption>
-                                <h3>美容院の仮想サイト(課題)</h3>
-                                <p>Category:Web</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                    <a href="img/kadai2.jpg"
-                        caption="パララックスデザインに挑戦するため制作いたしました。【<a target=&quot;_blank&quot; href=&quot;http://tokyo-d-plex.com/~sawasuzuki/kadai/&quot;>ACCESS</a>】"
-                        class="boxer" data-gallery="gallery">
-                            <img src="img/icon/kadai2.png" />
-                            <figcaption>
-                                <h3>cafe cuttari(課題)</h3>
-                                <p>Category:Web</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <a href="img/kadai3.jpg"
-                            caption="元のサイトがレスポンシブ対応していない為仮想サイトとして制作いたしました。【<a target=&quot;_blank&quot; href=&quot;http://tokyo-d-plex.com/~sawasuzuki/responsive/&quot;>ACCESS</a>】"
-                            class="boxer" data-gallery="gallery">
-                            <img src="img/icon/kadai3.png" />
-                            <figcaption>
-                                <h3>猫カフェの仮想サイト(課題)</h3>
-                                <p>Category:Web</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <a href="img/kadai4.jpg"
-                            caption="3人チームで制作を行い、主にデザインとプランニングを担当いたしました。【<a target=&quot;_blank&quot; href=&quot;http://tokyo-d-plex.com/~seiko_fujiwara/jaga/&quot;>ACCESS</a>】"
-                            class="boxer" data-gallery="gallery">
-                            <img src="img/icon/kadai4.png" />
-                            <figcaption>
-                                <h3>じゃがりこのキャンペーン<br>仮想サイト(課題)</h3>
-                                <p>Category:Web</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <a href="img/kadai5.jpg" caption="DTPデザインとロゴ制作を行いました。" class="boxer" data-gallery="gallery">
-                            <img src="img/icon/kadai5.png" />
-                            <figcaption>
-                                <h3>カフェのチラシ(課題)</h3>
-                                <p>Category:DTP</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <a href="img/smilinks.jpg" caption="クラウドソーシングサイトにて行われていた名刺デザインコンペにて2点ご提案させて頂きました。" class="boxer"
-                            data-gallery="gallery">
-                            <img src="img/icon/meishi.png" />
-                            <figcaption>
-                                <h3>株式会社スマイリンクス様<br>名刺デザインのご提案</h3>
-                                <p>Category:DTP</p>
-                            </figcaption>
-                        </a>
-                    </figure>
-                </article>
+            <div class="box" id="school">
+                <h3>SCHOOL</h3>
+                <div class="works">
+                    <article>
+                        <figure>
+                            <a href="img/kadai1.jpg"
+                                caption="友人からサイトデザインを一新したいらしいと紹介されたのをきっかけに試験的に制作いたしました。【<a target=&quot;_blank&quot; href=&quot;http://tokyo-d-plex.com/~sawasuzuki/webchukan/&quot;>ACCESS</a>】"
+                                class="boxer" data-gallery="gallery">
+                                <img src="img/icon/kadai1.png" alt="美容院の仮想サイト(課題)" />
+                                <figcaption>
+                                    <h3>美容院の仮想サイト(課題)</h3>
+                                    <p>Category:Web</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a href="img/kadai2.jpg"
+                                caption="パララックスデザインに挑戦するため制作いたしました。【<a target=&quot;_blank&quot; href=&quot;http://tokyo-d-plex.com/~sawasuzuki/kadai/&quot;>ACCESS</a>】"
+                                class="boxer" data-gallery="gallery">
+                                <img src="img/icon/kadai2.png" alt="cafe cuttari(課題)" />
+                                <figcaption>
+                                    <h3>cafe cuttari(課題)</h3>
+                                    <p>Category:Web</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a href="img/kadai3.jpg"
+                                caption="元のサイトがレスポンシブ対応していない為仮想サイトとして制作いたしました。【<a target=&quot;_blank&quot; href=&quot;http://tokyo-d-plex.com/~sawasuzuki/responsive/&quot;>ACCESS</a>】"
+                                class="boxer" data-gallery="gallery">
+                                <img src="img/icon/kadai3.png" />
+                                <figcaption>
+                                    <h3>猫カフェの仮想サイト(課題)</h3>
+                                    <p>Category:Web</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a href="img/kadai4.jpg"
+                                caption="3人チームで制作を行い、主にデザインとプランニングを担当いたしました。【<a target=&quot;_blank&quot; href=&quot;http://tokyo-d-plex.com/~seiko_fujiwara/jaga/&quot;>ACCESS</a>】"
+                                class="boxer" data-gallery="gallery">
+                                <img src="img/icon/kadai4.png" alt="じゃがりこのキャンペーン仮想サイト(課題)" />
+                                <figcaption>
+                                    <h3>じゃがりこのキャンペーン<br>仮想サイト(課題)</h3>
+                                    <p>Category:Web</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a href="img/kadai5.jpg" caption="DTPデザインとロゴ制作を行いました。" class="boxer" data-gallery="gallery">
+                                <img src="img/icon/kadai5.png" alt="カフェのチラシ(課題)" />
+                                <figcaption>
+                                    <h3>カフェのチラシ(課題)</h3>
+                                    <p>Category:DTP</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <a href="img/smilinks.jpg" caption="クラウドソーシングサイトにて行われていた名刺デザインコンペにて2点ご提案させて頂きました。"
+                                class="boxer" data-gallery="gallery">
+                                <img src="img/icon/meishi.png" alt="株式会社スマイリンクス様 名刺デザインのご提案" />
+                                <figcaption>
+                                    <h3>株式会社スマイリンクス様<br>名刺デザインのご提案</h3>
+                                    <p>Category:DTP</p>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </article>
                 </div>
             </div>
 
