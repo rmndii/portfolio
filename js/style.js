@@ -68,9 +68,9 @@ $(function (){
         });
     });
 
-    $('#nav-toggle,#overlay').on('click', function ()
+    $('.burger-icon').on('click', function ()
     {
-        $('body').toggleClass('open');
+        $('#overlay').toggleClass('open');
     });
     
 });

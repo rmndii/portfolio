@@ -13,20 +13,20 @@ body {
     "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
 }
 #overlay {
-    display: none;
-    position: fixed;
-    background: rgba(0,0,0,.6);
+	position: fixed;
+    background: rgba(0,0,0,0.3);
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     right: 0;
-		bottom: 0;
-		z-index:99;
+    bottom: 0;
+		z-index: 0;
+		display:none;
 }
-.open #overlay {
+.open#overlay {
      display: block;
-  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -71,7 +71,7 @@ header {
   box-sizing: border-box;
   transition: 0.5s;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   &.fixed {
     padding: 1em;
     background: rgba(255, 255, 255, 0.8);
@@ -348,10 +348,11 @@ footer p {
   $burger-color: #222;
   $burger-color-overlay: #fff;
 header {
-  padding: 1em;
+	padding: 1em;
   &.fixed {
+		z-index:99;
     padding: 1em;
-    background: rgba(255, 255, 255, 0.8);
+    background:none;
 	}
 }
 .hero {
@@ -381,10 +382,9 @@ header nav{
 }
   .burger-nav {
     @include mq {
-      position: fixed;
+			position: fixed;
 			top: 0;
 			right:0;
-      z-index: 10;
       background:#fff;
 			width: 60%;
 			height: 100%;
@@ -408,7 +408,7 @@ header nav{
       position: absolute;
       top: 1.5em;
 			right: 1em;
-			z-index: 99;
+			z-index: 9999;
 
       span {
         position: absolute;
