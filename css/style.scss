@@ -79,7 +79,7 @@ padding: 2em 1em;
 box-sizing: border-box;
 transition: 0.5s;
 width: 100%;
-z-index: 9999;
+z-index: 2;
 .flexbox {
 align-items: center;
 display: flex;
@@ -208,6 +208,7 @@ height: auto;
 }
 figcaption {
 position: absolute;
+z-index: 999;
 padding: 4%;
 box-sizing: border-box;
 left: 0;
@@ -234,6 +235,12 @@ color: #2b2d31;
 text-align: left;
 letter-spacing: 0.1em;
 line-height: 1.4;
+}
+figcaption a{
+	color:#fff;
+	&:hover{
+		color:#fff;
+	}
 }
 figure:hover figcaption {
 bottom: -60%;

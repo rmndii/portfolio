@@ -94,7 +94,7 @@ header {
   box-sizing: border-box;
   transition: 0.5s;
   width: 100%;
-  z-index: 9999;
+  z-index: 2;
 }
 
 header .flexbox {
@@ -236,6 +236,7 @@ header .gnav ul li a {
 
 .portfolio .works figcaption {
   position: absolute;
+  z-index: 999;
   padding: 4%;
   box-sizing: border-box;
   left: 0;
@@ -264,6 +265,14 @@ header .gnav ul li a {
   text-align: left;
   letter-spacing: 0.1em;
   line-height: 1.4;
+}
+
+.portfolio .works figcaption a {
+  color: #fff;
+}
+
+.portfolio .works figcaption a:hover {
+  color: #fff;
 }
 
 .portfolio .works figure:hover figcaption {
