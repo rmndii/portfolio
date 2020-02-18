@@ -142,10 +142,10 @@ body {
     }
   }
   .hero {
-    margin: 0 auto 3em;
+    margin: 0 auto;
     display: block;
     overflow: hidden;
-    padding: 7em 0 3em;
+    padding: 8em 0 3em;
     box-sizing: border-box;
     background: #e0eafc; /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #cfdef3, #e0eafc); /* Chrome 10-25, Safari 5.1-6 */
@@ -193,9 +193,9 @@ body {
       letter-spacing: 0.1em;
     }
     .box {
-      background: #f0f0f0;
+      background: #f1f1f1;
       padding: 2em;
-      margin: 4em auto;
+      margin: 2em auto;
       width: 80%;
       box-sizing: border-box;
       h3 {
@@ -364,7 +364,7 @@ footer p {
     }
   }
   .hero {
-    padding: 8em 0 3em;
+    padding: 5em 0 2em;
   }
   header nav {
     ul {

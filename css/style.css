@@ -164,10 +164,10 @@ header .gnav ul li a {
 }
 
 .hero {
-  margin: 0 auto 3em;
+  margin: 0 auto;
   display: block;
   overflow: hidden;
-  padding: 7em 0 3em;
+  padding: 8em 0 3em;
   box-sizing: border-box;
   background: #e0eafc;
   /* fallback for old browsers */
@@ -218,9 +218,9 @@ header .gnav ul li a {
 }
 
 .portfolio .box {
-  background: #f0f0f0;
+  background: #f1f1f1;
   padding: 2em;
-  margin: 4em auto;
+  margin: 2em auto;
   width: 80%;
   box-sizing: border-box;
 }
@@ -389,7 +389,7 @@ footer p {
     background: none;
   }
   .hero {
-    padding: 8em 0 3em;
+    padding: 5em 0 2em;
   }
   header nav ul {
     display: block;
